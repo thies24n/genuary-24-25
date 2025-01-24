@@ -1,0 +1,13 @@
+body {
+    color: azure;
+    text-align: center;
+
+    background-color: #051540;
+}
+
+#main-canvas {
+    width: min(calc(fit-content), 90vw);
+    height: min(calc(fit-content), 90vw);
+
+    background-color: white;
+}
