@@ -23,32 +23,43 @@
             <canvas id="main-canvas"></canvas>
         </p>
 
-        <!-- Image upload -->
-        <p class="text-center">
-            <label for="form-image-upload" class="form-label">Accepted file types: .jpg, .png</label>
-            <input class="form-control w-50" id="form-image-upload" type="file" />
-        </p>
+        <div id="form-control-box" class="d-flex">
+            <!-- Image upload -->
+            <p>
+                <label for="form-image-upload" class="form-label">Accepted file types: .jpg, .png</label>
+                <input class="form-control" id="form-image-upload" type="file" />
+            </p>
 
-        <!-- Shape Count -->
-        <label for="form-num-shapes" class="form-label w-50">Shape Count</label>
-        <input type="range" class="form-range w-50" min="5" max="200" step="1" id="form-num-shapes">
+            <!-- Shape Count -->
+            <p>
+                <label for="form-num-shapes" class="form-label w-50">Shape Count</label>
+                <input type="range" class="form-range w-50" min="5" max="200" step="1" id="form-num-shapes">
+            </p>
 
-        <!-- Foreground Bias -->
-        <label for="form-num-shapes" class="form-label w-50">Foreground Bias</label>
-        <input type="range" class="form-range w-50" min="0" max="100" step="5" id="form-num-shapes">
+            <!-- Foreground Bias -->
+            <p>
+                <label for="form-num-shapes" class="form-label w-50">Foreground Bias</label>
+                <input type="range" class="form-range w-50" min="0" max="100" step="5" id="form-num-shapes">
+            </p>
 
-        <!-- Allowed Shapes -->
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="form-allow-circles" value="option1">
-            <label class="form-check-label" for="form-allow-circles">Circles</label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="form-allow-rectangles" value="option2">
-            <label class="form-check-label" for="form-allow-rectangles">Rectangles</label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="form-allow-triangles" value="option3">
-            <label class="form-check-label" for="form-allow-triangles">Triangles</label>
+            <!-- Allowed Shapes -->
+            <p id="form-allowed-shapes">
+                <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                    <input type="checkbox" class="btn-check" id="form-allow-circles" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="form-allow-circles">Circles</label>
+                  
+                    <input type="checkbox" class="btn-check" id="form-allow-rectangles" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="form-allow-rectangles">Rectangles</label>
+                  
+                    <input type="checkbox" class="btn-check" id="form-allow-triangles" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="form-allow-triangles">Triangles</label>
+                </div>
+            </p>
+
+            <!-- Render Button -->
+            <p>
+                <button type="button" class="btn btn-primary">Render</button>
+            </p>
         </div>
     </main>
 

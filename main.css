@@ -11,3 +11,16 @@ body {
 
     background-color: white;
 }
+
+#form-control-box {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    background-color: #030c25;
+    border-radius: 1rem;
+}
+
+#form-control-box > * {
+    min-width: 49vw;
+}
