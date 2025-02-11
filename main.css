@@ -1,0 +1,27 @@
+body {
+    color: azure;
+    text-align: center;
+    font-family: 'Inconsolata', Courier, monospace;
+
+    background-color: #051540;
+}
+
+#main-canvas {
+    width: min(calc(fit-content), 90vw);
+    height: min(calc(fit-content), 90vw);
+
+    background-color: white;
+}
+
+#form-control-box {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    background-color: #030c25;
+    border-radius: 1rem;
+}
+
+#form-control-box > * {
+    min-width: 49vw;
+}
