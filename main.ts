@@ -3,5 +3,5 @@ import { ShapeinatorModel } from "./shapeinator_model";
 import { ShapeinatorView } from "./shapeinator_view";
 
 let model = new ShapeinatorModel();
-let view = new ShapeinatorView(model);
+let view = new ShapeinatorView();
 let controller = new ShapeinatorController(model, view);

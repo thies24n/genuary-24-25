@@ -1,11 +1,13 @@
-import { ShapeinatorModel } from "./shapeinator_model";
-
 export class ShapeinatorView {
 
-    #model: ShapeinatorModel
+    private mainCanvas: HTMLElement | null;
+    private formImageUpload: HTMLElement | null;
 
-    constructor(model: ShapeinatorModel) {
-        this.#model = model;
+    constructor() {
+        
+        this.mainCanvas = document.getElementById("main-canvas");
+        this.formImageUpload = document.getElementById("form-image-upload");
+
     }
 
 }
